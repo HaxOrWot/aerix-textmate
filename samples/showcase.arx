@@ -1,0 +1,33 @@
+/// Showcase sample for Aerix TextMate grammar verification.
+import Math
+
+trait Printable {
+    fn describe() -> str
+}
+
+class Signal implements Printable {
+    id: i64
+    gain: f64
+
+    init(id: i64, gain: f64) {
+        self.id = id
+        self.gain = gain
+    }
+
+    fn describe() -> str {
+        return "Signal#{self.id}"
+    }
+}
+
+fn scale(v: i64) -> i64 {
+    return v * 2 + 1
+}
+
+fn main() {
+    defer println("Done.")
+    let sig = Signal(7, 2.5)
+    println(sig.describe())
+
+    let out = scale(21)
+    println("Value: {out}")
+}

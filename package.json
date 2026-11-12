@@ -1,0 +1,39 @@
+{
+  "name": "aerix-textmate",
+  "displayName": "Aerix TextMate Grammar",
+  "description": "Official TextMate syntax highlighting grammar for the Aerix (.arx) programming language, designed for GitHub Linguist and editor integrations.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HaxOrWot/aerix-textmate.git"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "aerix",
+        "aliases": [
+          "Aerix",
+          "aerix"
+        ],
+        "extensions": [
+          ".arx"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "aerix",
+        "scopeName": "source.aerix",
+        "path": "./syntaxes/aerix.tmLanguage.json"
+      }
+    ]
+  }
+}
